@@ -21,3 +21,7 @@ doc/
 *~
 .project
 bundler_stubs/
+
+#files added by zeus
+custom_plan.rb
+zeus.json

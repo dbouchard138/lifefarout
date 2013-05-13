@@ -5,16 +5,31 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :development do
+    gem 'growl'
+    gem 'guard'
+    gem 'guard-bundler'
+    gem 'guard-rspec'
+    gem 'guard-cucumber'
+    gem 'guard-zeus'
+    gem 'rb-fsevent', require: false
+    gem 'rb-fchange', require: false
+end
+
 group :development, :test do
     gem 'sqlite3'
     gem 'devise'
+    gem 'rspec'
     gem 'rspec-rails'
-    gem 'guard-rspec'
-    gem 'guard-spork'
-    gem 'spork'
 end
 
-group :development do
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails', require: false
+  gem 'rspec-rails'
+  gem 'terminal-notifier-guard'
+  gem 'autotest'
 end
 
 # Gems used only for assets and not required
@@ -24,15 +39,6 @@ group :assets do
     gem 'coffee-rails', '~> 3.2.1'
     gem 'uglifier', '>= 1.0.3'
 end
-
-group :test do
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'cucumber-rails'
-  gem 'autotest'
-end
-
-
 
 
 
