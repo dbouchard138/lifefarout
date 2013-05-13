@@ -58,5 +58,10 @@ module Lifefarout
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.assets.initialize_on_precompile = false
+
+    config.secret_token = '46b40024cef1f970cac169a4c8081989b0af83f8588b38e8f6d3c4e4c5cad59d2d3a43ee0aff62959d7e7f88c980b8bf2b06a5f791109effacfb44af28ee4518'
+
   end
 end

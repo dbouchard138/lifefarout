@@ -1,4 +1,6 @@
 Lifefarout::Application.routes.draw do
+  root :to => "devise/passwords#newloca"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
